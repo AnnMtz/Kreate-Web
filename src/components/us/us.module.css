@@ -1,0 +1,96 @@
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    padding: 5px 0px;
+    overflow: hidden;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    margin: 3rem 0 2rem 0;
+}
+
+#company{
+    border: 1px solid black;
+    width: 76vw;
+    height: 56vh;
+    border-radius: 12px;
+}
+
+.about-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5px;
+    background-color: #1f1e1e;
+    margin-top: 0px;
+}
+
+.image{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.about-img h1{
+    margin: 0 0 0 3px;
+    color: #3D51D0;
+}
+
+.about-img h3 {
+    color: #002bff7a;
+    font-style: italic;
+}
+
+.rows{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+.colums{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23rem;
+}
+
+#values-img {
+    width: 16rem;
+    height: 14rem;
+}
+
+.card-img{
+    width: 16rem;
+    height: 12rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-body{
+    margin: auto 6rem;
+    width: 24rem;
+    text-align: justify;
+}
+
+.card-title{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.card-text ul {
+    margin-left: 7rem;
+    list-style: none;
+}
+
