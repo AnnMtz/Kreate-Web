@@ -18,7 +18,7 @@ const Contact = () => {
             process.env.REACT_APP_USER_ID
         )
         .then(
-            result => console.log(result.message),
+            result => console.log(result.text),
             error => console.log(error.text)
         );
 

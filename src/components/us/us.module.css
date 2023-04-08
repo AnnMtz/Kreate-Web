@@ -16,7 +16,7 @@
 
 #company{
     border: 1px solid black;
-    width: 76vw;
+    width: 72vw;
     height: 56vh;
     border-radius: 12px;
 }
@@ -94,3 +94,145 @@
     list-style: none;
 }
 
+@media screen and (max-width: 420px) {
+    #company {
+        width: 60vw;
+        height: 33vh;
+    }
+
+    .about-img h1 {
+        font-size: 1rem;
+    }
+
+    .about-img h3 {
+        font-size: .5rem;
+    }
+
+    .rows {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #values-img{
+        width: 13rem;
+        height: 12rem;
+    }
+
+    .card-img {
+        width: 12rem;
+        height: 10rem;
+    }
+    .card-body {
+        width: 18rem;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .card-text ul {
+        margin-left: 3.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #company {
+        width: 60vw;
+        height: 52vh;
+    }
+
+    .about-img h1 {
+        margin: 0 0 0 6px;
+        font-size: 2rem;
+    }
+
+    .about-img h3 {
+        font-size: 1rem;
+    }
+    .rows {
+        margin-left: 3rem;
+        margin-right: 4rem;
+    }
+    #values-img {
+        width: 9rem;
+        height: 11rem;
+    }
+
+    .card-img {
+        width: 10rem;
+        height: 9rem;
+    }
+
+    .card {
+        width: 16rem;
+    }
+    .card-body {
+        width: 12rem;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .card-text ul {
+        margin-left: 1.5rem;
+    }
+}
+
+@media (min-width: 912px) {
+    .rows {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #values-img{
+        width: 12rem;
+        height: 14rem;
+    }
+
+    .card-img {
+        width: 12rem;
+        height: 12rem;
+    }
+    .card {
+        width: 18px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #company {
+        width: 62vw;
+        height: 66vh;
+    }
+
+    .about-img h1 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .about-img h3 {
+        font-size: 1.5rem;
+    }
+
+    #values-img {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    .card-img {
+        width: 14rem;
+        height: 14rem;
+    }
+
+    .card-body {
+        width: 16rem;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    .card-text ul {
+        margin-left: 3.5rem;
+    }
+}

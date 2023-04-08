@@ -1,7 +1,6 @@
 .container-fluid{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 
 .about-img{
@@ -164,67 +163,5 @@
     }
 }
 
-/* @media only screen and (min-width: 1280px) {
-    .row {
-        width: 60px;
-    }
-} */
-/* @media (max-width: 1024px) {
-    .row {
-        width: 60px;
-    }
-} */
-
-/* @media (min-width: 1024px) {
-    .row {
-        width: 60px;
-    }
-
-    
-    .contact-card form {
-        width: 25rem;
-    }
-} */
-
-/* @media screen and (max-width: 420px) {
-    .row {
-        flex-direction: column;
-        margin-left: .5rem;
-    }
-
-    .contact-card {
-        margin: auto;
-        width: 18rem;
-        font-size: 11px;
-    }
-
-    .card-title {
-        font-size: 1rem;
-        margin: 1rem;
-    }
-
-    .card-text {
-        margin-left: 1rem;
-    }
-
-    .card-text span {
-        margin-left: 1rem;
-        font-size: 8px;
-    }
-
-    .contact-icon {
-        width: 1rem;
-    }
-
-    .contact-card form {
-        width: 16rem;
-        margin-left: .5rem;
-    }
-
-    #submit {
-        padding: 0;
-        font-size: 14px;
-    }
-} */
 
 
