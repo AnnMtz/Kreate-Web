@@ -1,0 +1,148 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer {
+    display: inherit;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    margin-top: 4rem;
+    padding: 2rem;
+    background-color: #ff820aa6;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20vw;
+}
+
+.logo {
+    width: 9rem;
+    height: 8rem;
+}
+
+#btn {
+    height: 2.5rem;
+    border-radius: 14px;
+    background-color: #dc3935d1;
+    border: none;
+    width: 6rem;
+}
+
+#btn a{
+    color: #000486;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.card-rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 72vw;
+}
+
+.card-col {
+    color: #002bffd9;
+    padding-top: .5rem;
+}
+
+.paragraph {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.contact-info {
+    font-weight: 700;
+}
+.card-col span {
+    display: block;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 18vw;
+}
+
+#face{
+    height: 4rem;
+}
+
+.redes {
+    height: 2rem;
+}
+
+@media screen and (max-width: 420px) {
+    .footer {
+        padding: .5rem;
+    }
+
+    .logo-container {
+        width: 0;
+        margin-left: 0;
+    }
+
+    .logo {
+        width: 5rem;
+        height: 4rem;
+    }
+
+    #btn {
+        width: 42px;
+        height: 1rem;
+    }
+
+    #btn  a {
+        font-size: 6px;
+        position: relative;
+        top: -8px;
+    }
+
+    .card-rows {
+        width: 87vw;
+        justify-content: flex-end;
+
+    }
+
+    .paragraph,
+    .contact-info {
+        font-size: 9px;
+    }
+
+    .card-col {
+        margin-right: 1rem;
+    }
+
+    .card-col span {
+        font-size: 8px;
+    }
+
+    .social-media {
+        width: 11vw;
+    }
+
+    #face {
+        height: 1rem;
+    }
+
+    .redes {
+        height: .5rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .card-col {
+        margin-left: 4rem;
+    }
+}

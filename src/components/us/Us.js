@@ -45,8 +45,8 @@ const Us = () => {
                     <div className={styles.card}>
                         <img src={vision} id="vision-img" className={styles['card-img']} alt="Vision" />
                         <div className={styles['card-body']}>
-                            <h5 className={styles['card-title']}>Vision</h5>
-                            <p className={styles['card-text']}>Nuestra prioridad es que logres tus objetivos, haciendo que tu empresa o negocio sea visual dentro de internet y las redes sociales, para así maximisar tus ganancias</p>
+                            <h5 className={styles['card-title']}>Visión</h5>
+                            <p className={styles['card-text']}>Nuestra prioridad es que logres tus objetivos, haciendo que tu empresa o negocio sea visual dentro de internet y redes sociales, para así maximizar tus ganancias</p>
                         </div>
                     </div>
                 </div>

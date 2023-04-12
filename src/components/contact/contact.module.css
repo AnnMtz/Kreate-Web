@@ -59,7 +59,7 @@
 @media screen and (max-width: 420px) {
     .row {
         flex-direction: column;
-        margin-left: .5rem;
+        margin-left: 4.5rem;
     }
 
     .contact-card {

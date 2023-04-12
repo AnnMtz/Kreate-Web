@@ -1,8 +1,6 @@
 .container-fluid{
     display: flex;
     flex-direction: column;
-    /* margin-top: 5px;
-    padding: 5px 0px; */
     overflow: hidden;
 }
 
@@ -37,12 +35,16 @@
 
 .about-img h1{
     margin: 0 0 0 3px;
-    color: #3D51D0;
+    color: #3d51d0f2;
+    opacity: 9;
 }
 
 .about-img h3 {
-    color: #002bff7a;
+    color: #3d51d0f2;
+    opacity: 6;
     font-style: italic;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
 }
 
 .rows{
@@ -106,6 +108,7 @@
 
     .about-img h3 {
         font-size: .5rem;
+        margin-bottom: 1rem;
     }
 
     .rows {
@@ -131,7 +134,7 @@
     }
 
     .card-text ul {
-        margin-left: 3.5rem;
+        margin-left: 4.5rem;
     }
 }
 
