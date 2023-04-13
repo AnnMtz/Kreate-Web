@@ -56,11 +56,11 @@ footer {
 
 .paragraph {
     font-style: italic;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .contact-info {
-    font-weight: 700;
+    font-weight: 500;
 }
 .card-col span {
     display: block;

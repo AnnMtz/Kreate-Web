@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 // import './App.css';
+import Additional from 'components/additional/Additional';
 import Contact from 'components/contact/Contact';
 import Footer from 'components/footer/Footer';
 import Header from 'components/header/Header';
@@ -20,6 +21,7 @@ function App() {
           <Route path='/' element={<Main />} />
           <Route path='/us' element={<Us />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/additional' element={<Additional />} />
         </Routes>
         <Footer />
          {/* <Us />    */}
