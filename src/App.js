@@ -3,6 +3,7 @@
 import Contact from 'components/contact/Contact';
 import Footer from 'components/footer/Footer';
 import Header from 'components/header/Header';
+import Main from 'components/main/Main';
 import Us from 'components/us/Us';
 import {
   BrowserRouter as Router,
@@ -16,6 +17,7 @@ function App() {
       <div id="container">
         <Header />
         <Routes>
+          <Route path='/' element={<Main />} />
           <Route path='/us' element={<Us />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
