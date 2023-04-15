@@ -31,6 +31,7 @@
 
 .card-img {
     height: 10rem;
+    filter: invert(.03);
 }
 
 @media screen and (max-width: 420px) {

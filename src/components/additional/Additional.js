@@ -24,9 +24,9 @@ const Additional = () => {
                     <h5 className={styles['card-text']}>5. Finalizado el trabajo, se hace la entrega y liquidación a contra entrega.</h5>
                 </div>
             </div>
-            <div className={styles['additional-columns']}>
-                <h2 className={styles['card-title']}>Marketing Digital</h2>
-                <div className={styles['card-add']}>
+            <div className={styles['additional-columns']} id={styles['marketing-card']}>
+                <h2 className={styles['card-title']} id={styles['marketing-title']}>Marketing Digital</h2>
+                <div className={styles['card-add']} id={styles.marketing}>
                     <h5 className={styles['card-text']}>Te podemos incluir el Marketing Digital en Redes Sociales como:</h5>
                     <ul>
                         <li> - Google</li>

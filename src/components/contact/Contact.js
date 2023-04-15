@@ -36,7 +36,7 @@ const Contact = () => {
                         <div className={styles['contact-card']}>
                             <h5 className={styles['card-title']}>Dejanos tus dudas y nos pondremos en contacto a la brevedad</h5>
                             <p className={styles['card-text']}>
-                                <img src={telephone} className={styles['contact-icon']} alt="teléfono"/>
+                                <img src={telephone} className={styles['contact-icon']}  id={styles.phone} alt="teléfono"/>
                                 <span>55 8686 0053</span>
                             </p>
                             <p className={styles['card-text']}>

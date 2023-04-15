@@ -1,5 +1,3 @@
-// import logo from './logo.svg';
-// import './App.css';
 import Additional from 'components/additional/Additional';
 import Contact from 'components/contact/Contact';
 import Footer from 'components/footer/Footer';
@@ -24,7 +22,6 @@ function App() {
           <Route path='/additional' element={<Additional />} />
         </Routes>
         <Footer />
-         {/* <Us />    */}
       </div>
     </Router>
   );

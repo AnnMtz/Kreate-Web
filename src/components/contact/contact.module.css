@@ -22,6 +22,10 @@
     width: 4rem;
 }
 
+#phone {
+    filter: invert(.04);
+}
+
 .card-text span {
     margin-left: 2rem;
     font-weight: 700;

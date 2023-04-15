@@ -7,7 +7,11 @@
     display: inherit;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 3rem;
+    margin: 2rem 0 3rem 0;
+}
+
+.about h1 {
+    margin-top: 2rem;
 }
 
 #diseño {
@@ -26,7 +30,6 @@ blockquote {
     display: inherit;
     flex-direction: row;
     padding: 4rem;
-    /* align-items: center; */
 }
 
 .additional-columns {
@@ -34,7 +37,6 @@ blockquote {
     padding: 4rem;
     border: 1px solid #070ca0ad;
     border-radius: 12px;
-    /* box-shadow: 5px 5px 5px 0px rgba(0,4,134,0.39); */
     box-shadow: 5px 5px 5px 0px rgba(0,4,134,0.21);
 }
 
@@ -53,4 +55,87 @@ blockquote {
 
 .card-add li {
     list-style: none;
+}
+
+@media screen and (max-width: 420px) {
+    .about h1 {
+        font-size: 1.5rem;
+    }
+
+    #diseño {
+        height: 9rem;
+    }
+
+    blockquote {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .additional-rows {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .additional-columns {
+        width: 21rem;
+        padding: 0;
+    }
+
+    #marketing-card {
+        margin-top: 2rem;
+    }
+
+    #marketing {
+        padding: 1rem 2rem;
+    }
+
+    
+    .card-title {
+        margin: 1rem 3rem;
+        font-size: 1.5rem;
+    }
+    
+    #marketing-title {
+        margin: 2rem 5rem 0;
+    }
+
+    .card-text {
+        line-height: 3rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .about h1 {
+        font-size: 1.5rem;
+    }
+
+    #diseño {
+        height: 16rem;
+    }
+
+    blockquote {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .additional-rows {
+        flex-direction: column;
+    }
+
+    .additional-columns {
+        width: 38rem;
+    }
+
+    #marketing-card {
+        margin-top: 2rem;
+    }
+
+    .card-title {
+        margin: 2rem 10rem;
+    }
+
+    #marketing-title {
+        margin: 2rem 8rem 1rem;
+    }
 }

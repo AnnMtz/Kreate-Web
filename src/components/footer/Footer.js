@@ -19,13 +19,9 @@ const Footer = () => {
                         <Link to="/contact">Contacto</Link>
                     </button>
                 </div>
-            {/* </div> */}
-            {/* <div className={styles.cards}> */}
                 <div className={styles['card-rows']}>
                     <div className={styles['card-col']}>
                         <p className={styles.paragraph}>La mejor solución</p>
-                    {/* </div> */}
-                    {/* <div className={styles['card-col']}> */}
                         <p id={styles['contact-info']} className={styles.paragraph}>Información de contacto</p>
                         <span className={styles['contact-data']}>Telefóno: 55 8686 0053</span>
                         <span className={styles['contact-data']}>Email: contacto.kreateweb@gmail.com</span>

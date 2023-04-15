@@ -5,12 +5,14 @@ import desarrollo from 'assets/img/Desarrollo.jpg';
 import responsive from 'assets/img/responsiveweb.jpg';
 import resp from 'assets/img/responsiveweb2.jpg';
 import { Link } from "react-router-dom";
+import images from 'exports/images';
 
 const Main = () => {
 
+    const arrayImages = images
     return (
         <>
-           {/* <Carrusel /> */}
+           <Carrusel images={arrayImages}/>
            <div id={styles.container}>
                  <h1 id={styles.header}>Nuestros Servicios</h1>
                  <div className={styles['main-row']}>
