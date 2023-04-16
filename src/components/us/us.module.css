@@ -14,9 +14,9 @@
 
 #company{
     border: 1px solid black;
-    width: 72vw;
+    width: 30vw;
     height: 56vh;
-    border-radius: 12px;
+    border-radius: 50px;
 }
 
 .about-img{
@@ -204,17 +204,17 @@
 
 @media screen and (min-width: 1280px) {
     #company {
-        width: 62vw;
-        height: 66vh;
+        width: 30vw;
+        height: 50vh;
     }
 
     .about-img h1 {
-        font-size: 3rem;
+        font-size: 2rem;
         margin-bottom: 2rem;
     }
 
     .about-img h3 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     #values-img {

@@ -1,10 +1,11 @@
 .navbar {
-    height: 12rem;
+    height: 10rem;
     background-color: #ff820aa6;
     opacity: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: -1px 6px 5px 0px rgba(148,143,148,1);
 }
 
 .logo {
@@ -34,6 +35,20 @@
     }
 }
 
+@media screen and (max-width: 420px) {
+    .logo {
+        height: 7rem;
+    }
+
+    .navbar-nav.active {
+        top: 20px
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .burger-container{
         display: none;
@@ -46,11 +61,14 @@
         right: 100px;
         top: 72px;
     }
-
 }
 
-@media screen and (max-width: 387px) {
+@media screen and (min-width: 1280px) {
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+    }
     .logo {
-        height: 7rem;
+        height: 9rem;
     }
 }

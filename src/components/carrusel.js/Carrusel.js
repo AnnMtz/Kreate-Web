@@ -29,7 +29,7 @@ const Carrusel = ({images}) => {
 
     return (
         <div className={styles.container}>
-            <button id={styles['left-btn']} onClick={previousImg}>{'<'}</button>
+            {/* <button id={styles['left-btn']} onClick={previousImg}>{'<'}</button> */}
             {images.map((image, idx) => {
                 return (
                 <div onChange={timer}>
@@ -39,7 +39,7 @@ const Carrusel = ({images}) => {
                 </div>
                 )
             })}
-            <button id={styles['right-btn']} onClick={nextImg}>{'>'}</button>
+            {/* <button id={styles['right-btn']} onClick={nextImg}>{'>'}</button> */}
         </div>
     );
 }

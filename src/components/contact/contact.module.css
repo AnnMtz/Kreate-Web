@@ -42,6 +42,15 @@
     width: 24rem;
 }
 
+.contact-card input {
+    border-radius: 6px;
+    padding: 0.2rem;
+}
+
+.contact-card textarea {
+    border-radius: 12px;
+}
+
 .contact-card label {
     font-weight: 700;
     font-style: italic;
@@ -54,16 +63,24 @@
 #submit {
     border-radius: 12px;
     text-transform: uppercase;
-    font-weight: bold;
-    background-color: #f57a0099;
+    font-weight: 700;
+    /* background-color: #f57a0099; */
+    background-color: #dc3935d1;
+    opacity: .9;
     padding: 0.5rem;
     font-size: 16px;
+    width: 10rem;
+    display: block;
+    margin: auto;
 }
 
 @media screen and (max-width: 420px) {
+    #contact {
+
+    }
     .row {
         flex-direction: column;
-        margin-left: 4.5rem;
+        margin-left: 3rem;
     }
 
     .contact-card {
