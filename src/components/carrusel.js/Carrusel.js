@@ -1,9 +1,5 @@
 import { useState } from "react";
 import styles from './carrusel.module.css';
-// import images from "exports/images";
-// import herramientas from 'assets/img/herramientas-crear-paginas-web.jpg';
-// import http from 'assets/img/https.jpg';
-// import web from 'assets/img/webdeveloper.jpg';
 
 
 
