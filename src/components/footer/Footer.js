@@ -12,7 +12,7 @@ const Footer = () => {
         <footer>
             <div className={styles.footer}>
                 <div className={styles['logo-container']}>
-                    <a id={styles.nav} href=''>
+                    <a id={styles.nav} href='logo'>
                         <img src={logo} className={styles.logo} alt="logo" />
                     </a>
                     <button id={styles.btn} type="submit">
