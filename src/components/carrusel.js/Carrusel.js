@@ -1,22 +1,9 @@
 import { useState } from "react";
 import styles from './carrusel.module.css';
 
-
-
-
 const Carrusel = ({images}) => {
     const [ actualImg, setActualImg ] = useState(0);
     const quantity = images?.length;
-
-    if(!Array.isArray(images) || quantity === 0) return;
-
-    const nextImg = () => {
-        setActualImg(actualImg === quantity - 1 ? 0 : actualImg + 1 )
-    }
-
-    const previousImg = () => {
-        setActualImg(actualImg === 0 ? quantity - 1 : actualImg - 1)
-    }
 
     const timer = setTimeout(() => {
         console.log('change');
@@ -25,7 +12,6 @@ const Carrusel = ({images}) => {
 
     return (
         <div className={styles.container}>
-            {/* <button id={styles['left-btn']} onClick={previousImg}>{'<'}</button> */}
             {images.map((image, idx) => {
                 return (
                 <div onChange={timer}>
@@ -35,23 +21,8 @@ const Carrusel = ({images}) => {
                 </div>
                 )
             })}
-            {/* <button id={styles['right-btn']} onClick={nextImg}>{'>'}</button> */}
         </div>
     );
 }
 
 export default Carrusel;
-
-
-        // <motion.div className={styles['slider-container']}>
-            {/* <img src={require(`assets/img/${selectedImage}`).default} alt="Slides"/>
-            <button onClick={previous}>{"<"}</button>
-            <button onClick={next}>{">"}</button> */}
-        //     <motion.div className={styles.slider} drag='x' dragConstraints={{right: 0}}>
-        //         {images.map(image => (
-        //             <motion.div className={styles.item}> 
-        //                 <img src={image} alt="Slides" />
-        //             </motion.div>
-        //         ))}  
-        //     </motion.div>
-        // </motion.div>
