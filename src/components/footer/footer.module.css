@@ -12,8 +12,9 @@ footer {
     width: 100vw;
     margin-top: 4rem;
     padding: .5rem;
-    background-color: #ff820aa6;
-    opacity: .9;
+    /* background-color: #ff820aa6; */
+    background-color: #FBE180;
+    /* opacity: .9; */
 }
 
 .logo-container {
