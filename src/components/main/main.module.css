@@ -75,7 +75,7 @@
     }
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
     .main-row {
         flex-direction: row;
     }
@@ -93,10 +93,11 @@
     .card-img {
         height: 8rem;
     }
-}
+} */
 
 @media screen and (min-width: 1280px) {
     .main-row {
+        flex-direction: row;
         justify-content: space-evenly;
         width: 100vw;
     }

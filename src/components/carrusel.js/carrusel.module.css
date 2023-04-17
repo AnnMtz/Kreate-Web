@@ -9,8 +9,10 @@
 }
 
 .slides {
-    height: 20rem;
-    width: 30rem;
+    /* height: 20rem;
+    width: 30rem; */
+    height: 30rem;
+    width: 40rem;
     border-radius: 38px;
 }
 
@@ -31,28 +33,28 @@
 
 @media screen and (max-width: 420px) {
     .slides {
-        height: 16rem;
-        width: 16rem;
+        height: 14rem;
+        width: 14rem;
     }
 }
 
 @media (min-width: 768px) {
     .slides {
-        height: 25rem;
-        width: 30rem;
+        height: 22rem;
+        width: 24rem;
     }
 }
 
 @media (min-width: 1024px) {
     .slides {
-        height: 40rem;
-        width: 45rem;
+        height: 30rem;
+        width: 30rem;
     }
 }
 
 @media screen and (min-width: 1280px) {
     .slides {
         height: 30rem;
-        width: 50rem;
+        width: 40rem;
     }
 }

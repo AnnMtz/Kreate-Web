@@ -12,9 +12,7 @@ footer {
     width: 100vw;
     margin-top: 4rem;
     padding: .5rem;
-    /* background-color: #ff820aa6; */
     background-color: #FBE180;
-    /* opacity: .9; */
 }
 
 .logo-container {
@@ -93,7 +91,7 @@ footer {
 
 @media screen and (max-width: 420px) {
     .footer {
-        padding: 0;
+        padding: 0.2;
     }
 
     .logo-container {
@@ -102,8 +100,8 @@ footer {
     }
 
     .logo {
-        width: 3rem;
-        height: 2rem;
+        width: 4rem;
+        height: 3rem;
     }
 
     #btn {
@@ -152,13 +150,13 @@ footer {
 
 @media (min-width: 768px) {
     .footer {
-        padding: 0;
+        padding: .5rem;
         width: 100vw;
     }
 
     .logo {
-        width: 4rem;
-        height: 3rem;
+        width: 5rem;
+        height: 4rem;
     }
 
     .btn {
@@ -192,16 +190,12 @@ footer {
     }
 }
 
-@media only screen and (min-width: 820px) and (max-width: 912px) {
-    footer {
-        position: fixed;
-        bottom: 0;
-    }
-}
-
 @media screen and (min-width: 1280px) {
+    .footer {
+        padding: .5rem;
+    }
     .logo {
-        width: 6rem;
+        width: 7rem;
         height: 5rem;
     }
 
