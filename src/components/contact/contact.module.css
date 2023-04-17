@@ -43,12 +43,15 @@
 }
 
 .contact-card input {
+    border: 1px solid #8080804f;
     border-radius: 6px;
-    padding: 0.2rem;
+    padding: 0.5rem;
 }
 
 .contact-card textarea {
     border-radius: 12px;
+    border: 1px solid #8080804f;
+    padding: .5rem;
 }
 
 .contact-card label {
@@ -63,8 +66,11 @@
 #submit {
     border-radius: 12px;
     text-transform: uppercase;
-    font-weight: 700;
-    background-color: #dc3935d1;
+    font-weight: 5200;
+    /* background-color: #dc3935d1;
+    border: 1px solid #dc3925d1; */
+    background-color: #dc3935a1;
+    border: 1px solid #dc39358f;
     opacity: .9;
     padding: 0.5rem;
     font-size: 16px;

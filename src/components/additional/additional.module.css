@@ -38,6 +38,7 @@ blockquote {
     border: 1px solid #070ca0ad;
     border-radius: 12px;
     box-shadow: 5px 5px 5px 0px rgba(0,4,134,0.21);
+    background-color: white;
 }
 
 #dev-column {
@@ -51,6 +52,7 @@ blockquote {
 .card-text {
     font-size: 1rem;
     line-height: 2rem;
+    font-weight: 400;
 }
 
 .card-add li {
@@ -58,16 +60,19 @@ blockquote {
 }
 
 @media screen and (max-width: 420px) {
+    .about {
+        margin: 2rem 0 1rem 0;
+    }
     .about h1 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     #diseño {
-        height: 9rem;
+        height: 8rem;
     }
 
     blockquote {
-        font-size: 11px;
+        font-size: 10px;
         text-align: center;
     }
 
@@ -77,8 +82,16 @@ blockquote {
     }
 
     .additional-columns {
-        width: 21rem;
+        width: 16rem;
         padding: 0;
+    }
+
+    #dev-column {
+        padding: 0;
+    }
+
+    .card-add {
+        padding: 2rem;
     }
 
     #marketing-card {
@@ -86,36 +99,38 @@ blockquote {
     }
 
     #marketing {
-        padding: 1rem 2rem;
+        padding: 0rem 2rem;
     }
 
     
     .card-title {
-        margin: 1rem 3rem;
-        font-size: 1.5rem;
+        margin: 2rem 0 0 4rem;
+        font-size: 1rem;
     }
     
     #marketing-title {
-        margin: 2rem 5rem 0;
+        margin: 2rem 3rem 0;
     }
 
     .card-text {
-        line-height: 3rem;
+        line-height: 2.5rem;
+        font-size: 14px;
+        margin: 0;
     }
 
 }
 
 @media (min-width: 768px) {
     .about h1 {
-        font-size: 1.5rem;
+        font-size: 18px;
     }
 
     #diseño {
-        height: 16rem;
+        height: 12rem;
     }
 
     blockquote {
-        font-size: 15px;
+        font-size: 10px;
         text-align: center;
     }
 
@@ -124,7 +139,7 @@ blockquote {
     }
 
     .additional-columns {
-        width: 38rem;
+        width: 24rem;
     }
 
     #marketing-card {
@@ -137,5 +152,19 @@ blockquote {
 
     #marketing-title {
         margin: 2rem 8rem 1rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #diseño {
+        height: 14rem;
+    }
+
+    blockquote {
+        font-size: 14px;
+    }
+    
+    .additional-columns {
+        width: 30rem;
     }
 }

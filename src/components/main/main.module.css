@@ -34,6 +34,10 @@
     filter: invert(.03);
 }
 
+#info {
+    text-decoration: none;
+    color: #eb6864;
+}
 @media screen and (max-width: 420px) {
     #header {
         font-size: 2rem;

@@ -1,5 +1,5 @@
 .navbar {
-    height: 10rem;
+    height: 90px;
     background-color: #ff820aa6;
     opacity: 1;
     display: flex;
@@ -9,7 +9,8 @@
 }
 
 .logo {
-    height: 9rem;
+    height: 5rem;
+    margin-left: 2rem;
 }
 
 .navbar-nav {
@@ -36,20 +37,34 @@
 }
 
 @media screen and (max-width: 420px) {
+    .navbar {
+        height: 70px;
+    }
+
     .logo {
-        height: 7rem;
+        height: 3rem;
     }
 
     .navbar-nav.active {
-        top: 20px
+        top: -11px;
+        list-style: none;
     }
 
     .nav-link {
-        font-size: 16px;
+        font-size: 10px;
+        text-decoration: none;
     }
 }
 
 @media screen and (min-width: 768px) {
+    .navbar {
+        height: 72px;
+    }
+
+    .logo {
+        height: 4rem;
+    }
+
     .burger-container{
         display: none;
     }
@@ -59,7 +74,17 @@
         flex-direction: row;
         position: absolute;
         right: 100px;
-        top: 72px;
+        top: 9px;
+        list-style: none;
+    }
+
+    .nav-item {
+        margin-right: 2rem;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        font-size: 16px;
     }
 }
 
@@ -69,6 +94,11 @@
         flex-direction: row;
     }
     .logo {
-        height: 9rem;
+        height: 5.5rem;
+        margin-left: 2rem;
+    }
+
+    .nav-link {
+        font-size: 18px;
     }
 }

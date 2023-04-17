@@ -53,7 +53,28 @@
     transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 420px) {
+    .menu-icon-wrapper {
+      position: absolute;
+      top: 24px;
+      right: 27px;
+    }
+
+    .menu-icon::before,
+    .menu-icon,
+    .menu-icon::after {
+      height: 4px;
+    }
+  }
+
+  @media only screen and (min-width: 540px) {
+    .menu-icon-wrapper {
+        position: absolute;
+        right: 24px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
     .menu-icon-wrapper{
         position: absolute;
         top: 79px;

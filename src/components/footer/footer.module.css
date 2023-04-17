@@ -11,8 +11,9 @@ footer {
     align-items: center;
     width: 100vw;
     margin-top: 4rem;
-    padding: 2rem;
+    padding: .5rem;
     background-color: #ff820aa6;
+    opacity: .9;
 }
 
 .logo-container {
@@ -23,23 +24,25 @@ footer {
 }
 
 .logo {
-    width: 9rem;
-    height: 8rem;
+    width: 6rem;
+    height: 5rem;
+    margin-left: 1.5rem;
 }
 
 #btn {
-    height: 2.5rem;
+    height: 1.5rem;
     border-radius: 14px;
     background-color: #dc3935d1;
     border: none;
-    width: 6rem;
+    width: 4rem;
 }
 
 #btn a{
     color: #000486;
-    font-size: 11px;
+    font-size: 8px;
     font-weight: 600;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .card-rows {
@@ -51,19 +54,24 @@ footer {
 
 .card-col {
     color: #002bffd9;
-    padding-top: .5rem;
 }
 
 .paragraph {
     font-style: italic;
     font-weight: 600;
+    font-size: 12px;
+    color: #000000eb;
 }
 
 .contact-info {
     font-weight: 500;
+    font-size: 12px;
+    color: #000000eb;
 }
 .card-col span {
     display: block;
+    font-size: 12px;
+    color: #000000eb;
 }
 
 .social-media {
@@ -84,7 +92,7 @@ footer {
 
 @media screen and (max-width: 420px) {
     .footer {
-        padding: .5rem;
+        padding: 0;
     }
 
     .logo-container {
@@ -93,8 +101,8 @@ footer {
     }
 
     .logo {
-        width: 5rem;
-        height: 4rem;
+        width: 3rem;
+        height: 2rem;
     }
 
     #btn {
@@ -103,9 +111,9 @@ footer {
     }
 
     #btn  a {
-        font-size: 6px;
+        font-size: 4px;
         position: relative;
-        top: -8px;
+        top: -3px;
     }
 
     .card-rows {
@@ -116,15 +124,15 @@ footer {
 
     .paragraph,
     .contact-info {
-        font-size: 9px;
+        font-size: 7px;
     }
 
     .card-col {
-        margin-right: 1rem;
+        margin-right: 3rem;
     }
 
     .card-col span {
-        font-size: 8px;
+        font-size: 6px;
     }
 
     .social-media {
@@ -142,7 +150,73 @@ footer {
 }
 
 @media (min-width: 768px) {
+    .footer {
+        padding: 0;
+        width: 100vw;
+    }
+
+    .logo {
+        width: 4rem;
+        height: 3rem;
+    }
+
+    .btn {
+        height: 1rem;
+        width: 3rem;
+    }
+
+    .btn a {
+        font-size: 6px;
+    }
+
+    .paragraph,
+    .contact-info {
+        font-size: 10px;
+    }
+
+    .card-col span {
+        font-size: 9px;
+    }
+
+    .social-media {
+        width: 10vw;
+    }
+
+    #face {
+        height: 2rem;
+    }
+
+    .redes {
+        height: 1rem;
+    }
+}
+
+@media only screen and (min-width: 820px) and (max-width: 912px) {
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .logo {
+        width: 6rem;
+        height: 5rem;
+    }
+
     .card-col {
-        margin-left: 4rem;
+        margin-left: 6rem;
+    }
+
+    .social-media {
+        width: 14vw;
+    }
+
+    #face {
+        height: 3rem;
+    }
+
+    .redes {
+        height: 2rem;
     }
 }
