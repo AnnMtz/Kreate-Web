@@ -20,8 +20,8 @@ const Additional = () => {
                     <h5 className={styles['card-text']}>1. Platicaremos a fondo de tus requerimientos y necesidades.</h5>
                     <h5 className={styles['card-text']}>2. Basado en lo que necesites, te ofreceremos la mejor solución y cotización.</h5>
                     <h5 className={styles['card-text']}>3. Para iniciar, solo solicitaremos el 50% de anticipo.</h5>
-                    <h5 className={styles['card-text']}>4. Haremos el diseño de un prototipo, una vez terminado y que sea de tu agrado comenzaremos con el desarrollo.</h5>
-                    <h5 className={styles['card-text']}>5. Finalizado el trabajo, se hace la entrega y liquidación a contra entrega.</h5>
+                    <h5 className={styles['card-text']}>4. Haremos el diseño de un prototipo, una vez terminado y que sea de tu agrado, comenzaremos con el desarrollo.</h5>
+                    <h5 className={styles['card-text']}>5. Finalizado el trabajo, se hace la liquidación a contra entrega.</h5>
                 </div>
             </div>
             <div className={styles['additional-columns']} id={styles['marketing-card']}>

@@ -15,16 +15,18 @@ const Footer = () => {
                     <a id={styles.nav} href='logo'>
                         <img src={logo} className={styles.logo} alt="logo" />
                     </a>
-                    <button id={styles.btn} type="submit">
-                        <Link to="/contact">Contacto</Link>
-                    </button>
-                </div>
-                <div className={styles['card-rows']}>
-                    <div className={styles['card-col']}>
-                        <p className={styles.paragraph}>La mejor solución</p>
+                    <div className={styles['card-col']} id={styles['contact-card']}>
                         <p id={styles['contact-info']} className={styles.paragraph}>Información de contacto</p>
                         <span className={styles['contact-data']}>Telefóno: 55 8686 0053</span>
                         <span className={styles['contact-data']}>Email: contacto.kreateweb@gmail.com</span>
+                    </div>
+                    <button id={styles.btn} type="submit">
+                        <Link to="/contact" id={styles['btn-link']}>Contacto</Link>
+                    </button>
+                </div>
+                <div className={styles['card-rows']}>
+                    <div className={styles['card-paragraph']}>
+                        <p className={styles.paragraph}>La mejor solución</p>
                     </div>
                     <div className={styles['social-media']}>
                         <img src={face} alt="facebook" id={styles.face} />
