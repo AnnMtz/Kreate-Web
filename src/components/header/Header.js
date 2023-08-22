@@ -21,12 +21,11 @@ const Header = () => {
         <div className="navbar-collapse">
           <ul className={`navbar-nav ${clicked ? 'active' : ''}`}>
             <li className="nav-item mr-4">
-              <Link to="/" className="nav-link">Inicio</Link>
+              <Link to="/" className="nav-link ">Inicio</Link>
             </li>
             <li className="nav-item mr-4">
               <Link to="/us" className="nav-link">Nosotros</Link>
             </li>
-
             <li className="nav-item">
               <Link to="/contact" className="nav-link">Contacto</Link>
             </li>

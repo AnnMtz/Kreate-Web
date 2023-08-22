@@ -9,21 +9,77 @@
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-    margin: 3rem 0 2rem 0;
+    margin: 3rem 0 .8rem 0;
 }
 
 #company{
     border: 1px solid black;
-    width: 30vw;
-    height: 56vh;
-    border-radius: 50px;
+    /* width: 30vw;
+    height: 56vh; */
+    width: 22rem;
+    height: 24rem;
+    border-radius: 66px;
+}
+
+#title {
+    animation: appear 3s ease-in;
+    margin: 2rem auto;
+    text-shadow: 0px 0px 6px #000;
+}
+
+@keyframes appear {
+    from {
+        transform: translateY(100px);
+        color: #f8f9fa;
+    }
+    to {
+        color: rgba(0, 0, 0, 0.464);
+    }
+}
+.rows {
+    animation: up 6s ease-in;
+}
+
+@keyframes up {
+    from {
+        /* transform: translateY(150px); */
+        /* transform: translateZ(0); */
+        opacity: 0;
+    }
+    /* to {
+        transform: translateZ(100%);
+        visibility: visible;
+    } */
+}
+
+
+#subtitle {
+    animation: color 4s ease-in-out;
+    position: relative;
+    top: -315px;
+    font-size: 26px;
+    color: #ffff00e8;
+    text-decoration: underline;
+    margin: 0;
+}
+
+@keyframes color {
+    from{
+        transform: translateY(300px);
+    }
+    /* from {
+        color: transparent;
+    }
+    to {
+        color: #3d51d0f2;
+    } */
 }
 
 .about-img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
     background-color: #1f1e1e;
     margin-top: 0px;
 }
@@ -39,13 +95,13 @@
     opacity: 9;
 }
 
-.about-img h3 {
+/* .about-img h3 {
     color: #3d51d0f2;
     opacity: 6;
     font-style: italic;
     margin-top: 0.5rem;
     margin-bottom: 2rem;
-}
+} */
 
 .rows{
     display: flex;
@@ -89,6 +145,7 @@
     font-size: 1.2rem;
     text-align: center;
     margin-bottom: 5px;
+    text-transform: capitalize;
 }
 
 .card-text ul {
@@ -140,8 +197,8 @@
 
 @media (min-width: 768px) {
     #company {
-        width: 60vw;
-        height: 52vh;
+        /* width: 60vw;
+        height: 52vh; */
     }
 
     .about-img h1 {
@@ -204,8 +261,10 @@
 
 @media screen and (min-width: 1280px) {
     #company {
-        width: 30vw;
-        height: 50vh;
+        /* width: 30vw;
+        height: 50vh; */
+        width: 24rem;
+        height: 23rem;
     }
 
     .about-img h1 {

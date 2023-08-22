@@ -1,19 +1,24 @@
 .container {
+    background-color: #343a40;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }
 
 .slides {
     /* height: 20rem;
     width: 30rem; */
-    height: 30rem;
-    width: 40rem;
-    border-radius: 38px;
+    /* height: 30rem;
+    width: 40rem; */
+    height: 22rem;
+    width: 24rem;
+    margin: 1rem;
+    /* border-radius: 38px; */
+    border-radius: 50px;
 }
 
 #left-btn, #right-btn {
@@ -47,14 +52,17 @@
 
 @media (min-width: 1024px) {
     .slides {
-        height: 30rem;
+        height: 27rem;
         width: 30rem;
     }
 }
 
 @media screen and (min-width: 1280px) {
     .slides {
-        height: 30rem;
-        width: 40rem;
+        /* height: 30rem;
+        width: 40rem; */
+        height: 22rem;
+        width: 24rem;
+        margin: 1rem;
     }
 }

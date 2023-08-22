@@ -5,6 +5,7 @@ import values from 'assets/img/valores.jpg';
 import mision from 'assets/img/mision.jpg';
 import vision from 'assets/img/mision_vision_valores.jpg';
 
+
 const Us = () => {
     return (
         <div className={styles['container-fluid']}>
@@ -12,9 +13,9 @@ const Us = () => {
                 <div className={styles['img-container']}>
                     <img src={company} id={styles.company} alt="company logo"/>
                 </div>
-                <h1>NUESTRA EMPRESA</h1>
-                <h3>La única que se preocupa por ti</h3>
+                <h3 id={styles.subtitle}>Mejorando tu imagen</h3>
             </div>
+            <h1 id={styles.title}>NUESTRA EMPRESA</h1>
             <div className={styles.rows}>
                 <div className={styles.columns}>
                     <div className={styles.card}>
