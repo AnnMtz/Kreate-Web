@@ -6,14 +6,23 @@ import responsive from 'assets/img/responsiveweb.jpg';
 import resp from 'assets/img/responsiveweb2.jpg';
 import { Link } from "react-router-dom";
 import images from "exports/images";
+import msg from "exports/message";
+import Message from "components/Message/Message";
 
 const Main = () => {
 
     const arrayImages = images
+    const arrayMessage = msg
     return (
         <>
-           <Carrusel images={arrayImages}/>
+           <Carrusel 
+                images={arrayImages}
+                arrayMessage={arrayMessage}
+           />
            <div id={styles.container}>
+                <div className={styles['message-container']}>
+                        <Message msg={arrayMessage}/>
+                </div>
                  <h1 id={styles.header}>Nuestros Servicios</h1>
                  <div className={styles['main-row']}>
                     <div className={styles['main-columns']}>

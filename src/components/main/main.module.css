@@ -2,8 +2,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4rem;
-    /* background-color: #f8f9fa; */
+}
+
+.message-container {
+    position: relative;
+    top: -300px;
+    color: orange;
+    font-size: 26px;
+    text-transform: uppercase;
+    height: 37px;
+    -webkit-animation-name: up;
+    animation-name: up;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@keyframes up {
+    from {
+        transform: translateY(150px);
+        color: transparent;
+    }
 }
 
 .main-row {

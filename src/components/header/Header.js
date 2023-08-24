@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import logo from "assets/img/logo.png";
-// import background from 'assets/img/background2.jpg';
 import { Link } from "react-router-dom";
 import "./header.css";
 import BurgerButton from "components/button/BurgerButton";
