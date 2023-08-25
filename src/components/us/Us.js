@@ -1,22 +1,33 @@
-import React from "react";
+import { useEffect, useRef } from "react";
 import styles from "./us.module.css";
 import company from 'assets/img/empresa.jpg';
 import values from 'assets/img/valores.jpg';
 import mision from 'assets/img/mision.jpg';
 import vision from 'assets/img/mision_vision_valores.jpg';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger)
 
 
 const Us = () => {
+    const ref = useRef(null)
+
+    useEffect(() =>{
+        const element = ref.current;
+        gsap.fromTo(element, {rotateX: 90}, {rotateX: 0, duration: 5, scrollTrigger: {
+            trigger: element
+        }})
+    }, [])
     return (
         <div className={styles['container-fluid']}>
             <div className={styles['about-img']}>
                 <div className={styles['img-container']}>
                     <img src={company} id={styles.company} alt="company logo"/>
                 </div>
-                <h3 id={styles.subtitle}>Mejorando tu imagen</h3>
+                <h3 id={styles.subtitle} >Mejoramos tu imagen</h3>
             </div>
             <h1 id={styles.title}>NUESTRA EMPRESA</h1>
-            <div className={styles.rows}>
+            <div className={styles.rows} ref={ref}>
                 <div className={styles.columns}>
                     <div className={styles.card}>
                         <img src={values}  id={styles['values-img']} alt="values-img" />

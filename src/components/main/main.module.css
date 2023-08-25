@@ -26,11 +26,38 @@
     }
 }
 
-.main-row {
+.mainRow {
     display: inherit;
     margin-top: 2rem;
+    width: 100vw;
+    -webkit-animation-name: rotate;
+    animation-name: rotate;
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
 }
 
+@keyframes rotate {
+    from {
+        transform: rotateX(90deg);
+    }
+}
+
+#header {
+    -webkit-animation-name: appear;
+    animation-name: appear;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}
+
+@keyframes appear {
+    from {
+        transform: translateY(100px);
+        color: #f8f9fa;
+    }
+    to {
+        color: rgba(0, 0, 0, 0.464);
+    }
+}
 .main-columns {
     display: inline-block;
     width: 28rem;
@@ -57,7 +84,14 @@
 
 #info {
     text-decoration: none;
-    color: #eb6864;
+    /* color: #eb6864; */
+    color: orangered;
+    font-weight: 480;
+    font-size: 18px;
+}
+
+#info:hover {
+    font-size:x-large
 }
 @media screen and (max-width: 420px) {
     #header {

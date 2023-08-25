@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from './main.module.css';
 import Carrusel from "components/carrusel.js/Carrusel";
 import desarrollo from 'assets/img/Desarrollo.jpg';
@@ -8,23 +8,47 @@ import { Link } from "react-router-dom";
 import images from "exports/images";
 import msg from "exports/message";
 import Message from "components/Message/Message";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// gsap.registerPlugin(ScrollTrigger)
 
 const Main = () => {
+    const ref = useRef(null);
+    // const [ scrollTop, setScrollTop] = useState();
 
     const arrayImages = images
     const arrayMessage = msg
+    
+    const scrollToElement = () => {
+        ref.current?.scrollIntoView({
+            top: 100,
+            left: 100,
+            behavior: 'smooth'
+        })
+    }
+    useEffect(() => {
+        scrollToElement()
+    //    const element = ref.current;
+    //    gsap.fromTo(element, {rotateX: 90}, {rotateX: 0, duration: 5, scrollTrigger: {
+    //     trigger: element
+    //    }} )
+    }, [])
+    
     return (
         <>
-           <Carrusel 
-                images={arrayImages}
-                arrayMessage={arrayMessage}
-           />
+            <div ref={ref}>
+                <Carrusel 
+                        images={arrayImages}
+                        arrayMessage={arrayMessage}
+                />
+            </div>
            <div id={styles.container}>
                 <div className={styles['message-container']}>
                         <Message msg={arrayMessage}/>
                 </div>
                  <h1 id={styles.header}>Nuestros Servicios</h1>
-                 <div className={styles['main-row']}>
+                 <div className={styles.mainRow}
+                 >
                     <div className={styles['main-columns']}>
                         <div className={styles.card}>
                             <img src={desarrollo} alt="desarrollo"  id={styles['dev-img']} />

@@ -7,7 +7,8 @@
     display: inherit;
     flex-direction: column;
     align-items: center;
-    margin: 2rem 0 3rem 0;
+    /* margin: 2rem 0 3rem 0; */
+    background-color: #1f1e1e;
 }
 
 .about h1 {
@@ -15,13 +16,22 @@
 }
 
 #diseño {
-    height: 22rem;
+    /* height: 22rem; */
+    width: 22rem;
+    height: 20rem;
+    padding: 4rem;
+    border-radius: 100px;
+}
+
+h1 {
+    margin: 2rem auto;
 }
 
 blockquote {
     margin: auto;
     font-style: italic;
-    color: #000486ad;
+    color: black;
+    opacity: .8;
     font-size: 22px;
     font-weight: 700;
 }
@@ -30,7 +40,31 @@ blockquote {
     display: inherit;
     flex-direction: row;
     padding: 4rem;
+    -webkit-animation-name: move;
+    animation-name: move;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
 }
+
+@keyframes move {
+    from {
+        transform: rotateX(90deg);
+        color: transparent;
+    }
+}
+#title, #subtitle {
+    -webkit-animation-name: appear;
+    animation-name: appear;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}
+
+@keyframes appear {
+    from {
+        color: transparent;
+    }
+}
+
 
 .additional-columns {
     margin: auto;
@@ -157,11 +191,15 @@ blockquote {
 
 @media screen and (min-width: 1280px) {
     #diseño {
-        height: 14rem;
+        /* height: 14rem; */
+        width: 22rem;
+        height: 19rem;
+        padding: 4rem;
+        border-radius: 100px;
     }
 
     blockquote {
-        font-size: 16px;
+        font-size: 18px;
     }
     
     .additional-columns {

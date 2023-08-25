@@ -24,6 +24,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    -webkit-animation-name: rotate;
+    animation-name: rotate;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateX(90deg);
+        color: transparent;
+    }
 }
 
 .card-title {
@@ -79,11 +90,9 @@
     border-radius: 12px;
     text-transform: uppercase;
     font-weight: 5200;
-    /* background-color: #dc3935a1; */
     background-color: rgba(255, 98, 0, 0.842);
     color: white;
     border: 1px solid #dc39358f;
-    /* opacity: .9; */
     padding: 0.5rem;
     font-size: 16px;
     width: 10rem;

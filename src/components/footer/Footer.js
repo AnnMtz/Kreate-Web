@@ -8,13 +8,16 @@ import styles from './footer.module.css';
 
 const Footer = () => {
 
+    <Link to="/"id="nav-a" href="#">
+    <img src={logo} className="logo" alt="logo"/>
+  </Link>
     return (
         <footer>
             <div className={styles.footer}>
                 <div className={styles['logo-container']}>
-                    <a id={styles.nav} href='logo'>
+                    <Link to="/" id={styles.nav} href='logo'>
                         <img src={logo} className={styles.logo} alt="logo" />
-                    </a>
+                    </Link>
                     <div className={styles['card-col']} id={styles['contact-card']}>
                         <p id={styles['contact-info']} className={styles.paragraph}>Información de contacto</p>
                         <span className={styles['contact-data']}>Telefóno: 55 8686 0053</span>
