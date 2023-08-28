@@ -9,7 +9,7 @@ const Message = ({msg}) => {
     const timer = setTimeout(() => {
         setActualMsg(actualMsg === 0 ? quantity - 1 : actualMsg - 1)
         clearTimeout()
-    }, 50000)
+    }, 5000)
 
     return(
         <div className="">

@@ -32,8 +32,8 @@
     width: 100vw;
     -webkit-animation-name: rotate;
     animation-name: rotate;
-    -webkit-animation-duration: 8s;
-    animation-duration: 8s;
+    -webkit-animation-duration: 9s;
+    animation-duration: 9s;
 }
 
 @keyframes rotate {
@@ -45,8 +45,8 @@
 #header {
     -webkit-animation-name: appear;
     animation-name: appear;
-    -webkit-animation-duration: 5s;
-    animation-duration: 5s;
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;
 }
 
 @keyframes appear {
@@ -84,7 +84,6 @@
 
 #info {
     text-decoration: none;
-    /* color: #eb6864; */
     color: orangered;
     font-weight: 480;
     font-size: 18px;
@@ -93,13 +92,22 @@
 #info:hover {
     font-size:x-large
 }
-@media screen and (max-width: 420px) {
+
+@media screen and (max-width: 820px) {
     #header {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
-    .main-row {
+    .message-container {
+        font-size: 8px;
+        top: -145px;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    .mainRow {
         flex-direction: column;
+        align-items: center;
     }
 
     .main-columns {

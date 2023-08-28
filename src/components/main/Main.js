@@ -39,7 +39,7 @@ const Main = () => {
             <div ref={ref}>
                 <Carrusel 
                         images={arrayImages}
-                        arrayMessage={arrayMessage}
+                        // arrayMessage={arrayMessage}
                 />
             </div>
            <div id={styles.container}>

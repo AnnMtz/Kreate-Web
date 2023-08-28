@@ -35,11 +35,16 @@
 #right-btn {
     right: 2rem;
 }
-
+@media screen and (max-width: 375px) {
+    .slides {
+        height: 9rem;
+        width: 10rem;
+    }
+}
 @media screen and (max-width: 420px) {
     .slides {
-        height: 14rem;
-        width: 14rem;
+        height: 9rem;
+        width: 10rem;
     }
 }
 
