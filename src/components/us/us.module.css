@@ -157,6 +157,10 @@
         height: 33vh;
     }
 
+    #subtitle {
+        position: relative;
+        top: -211px;
+    }
     .about-img h1 {
         font-size: 1rem;
     }

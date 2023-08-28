@@ -113,6 +113,15 @@
         margin-left: 3rem;
     }
 
+    .about-img {
+        padding: 2rem 0;
+    }
+
+    #contact {
+        height: 15rem;
+         width: 13rem;
+    }
+    
     .contact-card {
         margin: auto;
         width: 18rem;
