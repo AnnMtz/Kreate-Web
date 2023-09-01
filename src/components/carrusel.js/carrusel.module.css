@@ -35,12 +35,12 @@
 #right-btn {
     right: 2rem;
 }
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
     .slides {
         height: 9rem;
         width: 10rem;
     }
-}
+} */
 @media screen and (max-width: 420px) {
     .slides {
         height: 9rem;
@@ -48,10 +48,17 @@
     }
 }
 
+@media (min-width: 540px) {
+    .slides {
+        height: 12rem;
+        width: 14rem;
+    }
+}
+
 @media (min-width: 768px) {
     .slides {
-        height: 22rem;
-        width: 24rem;
+        height: 20rem;
+        width: 20rem;
     }
 }
 

@@ -93,7 +93,8 @@
     font-size:x-large
 }
 
-@media screen and (max-width: 820px) {
+
+@media screen and (max-width: 420px) {
     #header {
         font-size: 1.5rem;
     }
@@ -128,18 +129,72 @@
     }
 }
 
- @media (min-width: 768px) {
-    .main-row {
+@media only screen and (max-width: 300px) and (min-width: 280px) {
+    #header {
+        font-size: 1.2rem;
+    }
+
+    .main-columns {
+        width: 10rem;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 540px) {
+    #header {
+        font-size: 2rem;
+    }
+
+    .message-container {
+        font-size: 14px;
+        top: -190px;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    .mainRow {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .main-columns {
+        width: 23rem;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+}
+
+ @media (min-width: 768px) {
+    .message-container {
+        font-size: 20px;
+        top: -272px;
+    }
+    .mainRow {
+        flex-direction: column;
+        align-items: center;
     }
 
     .main-columns {
         width: 34rem;
     }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 18px;
+    }
 }
 
-/* @media (min-width: 1024px) {
-    .main-row {
+
+@media screen and (min-width: 1024px) {
+    .mainRow {
         flex-direction: row;
     }
 
@@ -156,7 +211,7 @@
     .card-img {
         height: 8rem;
     }
-} */
+}
 
 @media screen and (min-width: 1280px) {
     .main-row {
@@ -164,12 +219,24 @@
         justify-content: space-evenly;
         width: 100vw;
     }
+
+    #header {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
     .main-columns {
         width: 24rem;
     }
 
     .card-text {
-        font-size: 14px;
+        font-size: 15px;
+    }
+
+    #info {
+        font-size: 18px;
     }
 
     #dev-img, 

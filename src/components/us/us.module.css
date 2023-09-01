@@ -34,22 +34,6 @@
         color: rgba(0, 0, 0, 0.464);
     }
 }
-.rows {
-    /* animation: up 6s ease-in; */
-}
-
-@keyframes up {
-    from {
-        /* transform: translateY(150px); */
-        /* transform: translateZ(0); */
-        /* opacity: 0; */
-    }
-    /* to {
-        transform: translateZ(100%);
-        visibility: visible;
-    } */
-}
-
 
 #subtitle {
     animation: color 4s ease-in-out;
@@ -65,19 +49,12 @@
     from{
         transform: translateY(300px);
     }
-    /* from {
-        color: transparent;
-    }
-    to {
-        color: #3d51d0f2;
-    } */
 }
 
 .about-img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding-bottom: 5px; */
     background-color: #1f1e1e;
     margin-top: 0px;
 }
@@ -92,14 +69,6 @@
     color: #3d51d0f2;
     opacity: 9;
 }
-
-/* .about-img h3 {
-    color: #3d51d0f2;
-    opacity: 6;
-    font-style: italic;
-    margin-top: 0.5rem;
-    margin-bottom: 2rem;
-} */
 
 .rows{
     display: flex;
@@ -151,15 +120,19 @@
     list-style: none;
 }
 
-@media screen and (max-width: 420px) {
+
+@media (max-width: 420px) {
     #company {
-        width: 60vw;
-        height: 33vh;
+        width: 67vw;
+        height: 34vh;
     }
 
     #subtitle {
         position: relative;
-        top: -211px;
+        top: -194px;
+        font-size: 28px;
+        opacity: .9;
+        line-height: 12px;
     }
     .about-img h1 {
         font-size: 1rem;
@@ -197,10 +170,69 @@
     }
 }
 
+@media only screen and (max-width: 300px) and (min-width: 280px) {
+    #company{
+        height: 31vh;
+    }
+
+    #subtitle {
+        font-size: 20px;
+        top: -162px;
+    }
+
+    #title {
+        font-size: 18px;
+    }
+
+    #values{
+        width: 10rem;
+    }
+
+    .card-img {
+        width: 11rem;
+    }
+
+    .card-body {
+        width: 12rem;
+        margin-bottom: .5rem;
+    }
+
+    .card-img {
+        margin-bottom: 0;
+    }
+    .card-text ul {
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 540px) {
+    #company {
+        height: 22rem;
+    }
+    #subtitle {
+        font-size: 30px;
+        top: -268px;
+    }
+
+    .rows {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-body {
+        width: 22rem;
+    }
+}
+
 @media (min-width: 768px) {
     #company {
-        /* width: 60vw;
-        height: 52vh; */
+        width: 19rem;
+        height: 19rem;
+    }
+
+    #subtitle {
+        top: -239px;
+        font-size: 37px;
     }
 
     .about-img h1 {
@@ -214,6 +246,8 @@
     .rows {
         margin-left: 3rem;
         margin-right: 4rem;
+        margin: 0 3rem 4rem 2rem;
+        flex-direction: row;
     }
     #values-img {
         width: 9rem;
@@ -232,8 +266,11 @@
         width: 12rem;
     }
 
+    .card-title {
+        font-size: 1.5rem;
+    }
     .card-text {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .card-text ul {
@@ -243,8 +280,7 @@
 
 @media (min-width: 912px) {
     .rows {
-        margin-left: 0;
-        margin-right: 0;
+        margin: 0 3rem 4rem 2rem;
     }
 
     #values-img{
@@ -259,16 +295,25 @@
     .card {
         width: 18px;
     }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .card-text {
+        font-size: 16px;
+    }
 }
 
 @media screen and (min-width: 1280px) {
     #company {
-        /* width: 30vw;
-        height: 50vh; */
         width: 24rem;
         height: 23rem;
     }
 
+    .rows {
+        flex-direction: row;
+    }
     .about-img h1 {
         font-size: 2rem;
         margin-bottom: 2rem;

@@ -41,7 +41,7 @@
 }
 
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 540px) {
     .navbar {
         height: 6rem;
     }
@@ -73,13 +73,19 @@
 }
 
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .navbar {
         height: 72px;
     }
     
     .logo {
-        height: 4rem;
+        height: 7rem;
+        width: 11rem;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+        right: 74px;
     }
     
     .burger-container{
@@ -101,24 +107,36 @@
     
     .nav-link {
         text-decoration: none;
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 
 @media screen and (min-width: 992px){
     .logo {
-        height: 11rem;
+        height: 7rem;
+        width: 11rem;
+    }
+
+    .nav-link {
+        font-size: 20px;
     }
 }
 
 @media screen and (min-width: 1280px) {
     .navbar {
-        height: 88px;
+        /* height: 88px; */
+        padding-bottom: 2rem;
+    }
+
+    .logo {
+        height: 8.6rem;
+        width: 13rem;
     }
     .navbar-nav {
         display: flex;
         flex-direction: row;
         top: 15px;
+        margin-top: 2rem;
     }
     .logo {
         height: 7.5rem;
@@ -126,6 +144,6 @@
     }
 
     .nav-link {
-        font-size: 18px;
+        font-size: 22px;
     }
 }

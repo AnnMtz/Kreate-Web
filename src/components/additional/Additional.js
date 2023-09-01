@@ -43,7 +43,7 @@ const Additional = () => {
                     </div>
                 </div>
                 <div className={styles['additional-columns']} id={styles['marketing-card']}>
-                    <h2 className={styles['card-title']} id={styles['marketing-title']}>Marketing Digital</h2>
+                    <h2 id={styles['marketing-title']}>Marketing Digital</h2>
                     <div className={styles['card-add']} id={styles.marketing}>
                         <h5 className={styles['card-text']}>Te podemos incluir el Marketing Digital en Redes Sociales como:</h5>
                         <ul>

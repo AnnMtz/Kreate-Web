@@ -12,6 +12,8 @@ const Header = () => {
         setClicked(!clicked)
     }
 
+    // setClicked(clicked)
+
     return(
         <nav className="navbar" >
         <Link to="/"id="nav-a" href="#">

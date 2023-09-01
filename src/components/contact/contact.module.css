@@ -107,10 +107,10 @@
     font-size: larger;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 540px) {
     .row {
         flex-direction: column;
-        margin-left: 3rem;
+        width: 100vw;
     }
 
     .about-img {
@@ -124,7 +124,7 @@
     
     .contact-card {
         margin: auto;
-        width: 18rem;
+        width: 20rem;
         font-size: 11px;
     }
 
@@ -147,7 +147,7 @@
     }
 
     .contact-card form {
-        width: 16rem;
+        width: 19rem;
         margin-left: .5rem;
     }
 
@@ -157,9 +157,39 @@
     }
 }
 
+@media only screen and (max-width: 300px) and (min-width: 280px) {
+    #contact {
+        height: 13rem;
+        width: 12rem;
+    }
+
+    .row {
+        width: 100vw;
+        margin: auto;
+    }
+
+    .contact-card {
+        text-align: justify;
+        width: 13rem;
+    }
+
+    .card-title {
+        font-size: .7rem;
+    }
+
+    .contact-card form {
+        width: 13rem;
+    }
+}
+
 @media (min-width: 768px) {
     .row {
         width: 45rem;
+        margin-bottom: 2rem;
+    }
+
+    .about-img {
+        padding: 4rem 0 4rem 0.5rem;;
     }
 
     .card-text {
@@ -190,8 +220,31 @@
 
 }
 
+@media screen and (min-width: 1024px) {
+    .row {
+        width: 100vw;
+    }
+    .contact-card {
+        width: 50vw;
+        margin-left: 3rem;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 24px;
+    }
+
+    .card-text span {
+        font-size: 16px;
+    }
+}
+
 @media screen and (min-width: 1280px) {
     .container-fluid {
+        /* flex-direction: column; */
         align-items: center;
     }
 
@@ -200,12 +253,13 @@
     }
 
     .row {
-        flex-direction: column;
+        flex-direction: row;
     }
 
 
     .contact-card {
-        width: 100%;
+        /* width: 100%; */
+        margin-left: 0;
     }
 
     .card-title {
@@ -218,8 +272,8 @@
     }
 
     .contact-card form {
-        width: 45rem;
-        margin-left: 6rem;
+        width: 37rem;
+        /* margin-left: 6rem; */
     }
 }
 
