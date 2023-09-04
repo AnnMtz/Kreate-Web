@@ -12,15 +12,13 @@ const Header = () => {
         setClicked(!clicked)
     }
 
-    // setClicked(clicked)
-
     return(
         <nav className="navbar" >
         <Link to="/"id="nav-a" href="#">
           <img src={logo} className="logo" alt="logo"/>
         </Link>
         <div className="navbar-collapse">
-          <ul className={`navbar-nav ${clicked ? 'active' : ''}`}>
+          <ul className={`navbar-nav ${clicked ? 'active' : ''}`} onClick={clicked}>
             <li className="nav-item mr-4">
               <Link to="/" className="nav-link ">Inicio</Link>
             </li>

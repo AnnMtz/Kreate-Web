@@ -1,3 +1,4 @@
+import ScrollBtn from 'components/ScrollBtn/ScrollBtn';
 import Additional from 'components/additional/Additional';
 import Contact from 'components/contact/Contact';
 import Footer from 'components/footer/Footer';
@@ -15,12 +16,14 @@ function App() {
     <Router>
       <div id="container">
         <Header />
+        {/* <ScrollBtn /> */}
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/us' element={<Us />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/additional' element={<Additional />} />
         </Routes>
+        <ScrollBtn />
         <Footer />
       </div>
     </Router>

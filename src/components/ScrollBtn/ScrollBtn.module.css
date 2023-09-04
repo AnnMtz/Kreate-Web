@@ -1,0 +1,30 @@
+#upBtn {
+    position: fixed;
+    z-index: 1000;
+    right: 25px;
+    bottom: 135px;
+    background-color: rgb(25, 121, 169);
+    opacity: .5;
+    width: 28px;
+    height: 26px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all .2s;
+}
+
+#upBtn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+}

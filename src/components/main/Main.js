@@ -8,13 +8,9 @@ import { Link } from "react-router-dom";
 import images from "exports/images";
 import msg from "exports/message";
 import Message from "components/Message/Message";
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// gsap.registerPlugin(ScrollTrigger)
 
 const Main = () => {
     const ref = useRef(null);
-    // const [ scrollTop, setScrollTop] = useState();
 
     const arrayImages = images
     const arrayMessage = msg
@@ -28,10 +24,6 @@ const Main = () => {
     }
     useEffect(() => {
         scrollToElement()
-    //    const element = ref.current;
-    //    gsap.fromTo(element, {rotateX: 90}, {rotateX: 0, duration: 5, scrollTrigger: {
-    //     trigger: element
-    //    }} )
     }, [])
     
     return (
@@ -39,7 +31,6 @@ const Main = () => {
             <div ref={ref}>
                 <Carrusel 
                         images={arrayImages}
-                        // arrayMessage={arrayMessage}
                 />
             </div>
            <div id={styles.container}>
