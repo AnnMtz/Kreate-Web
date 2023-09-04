@@ -4,9 +4,6 @@ import emailjs from 'emailjs-com';
 import contact from 'assets/img/contacto.jpg';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { IoIosMail } from 'react-icons/io';
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// gsap.registerPlugin(ScrollTrigger)
 
 const Contact = () => {
     const form = useRef();
@@ -23,12 +20,6 @@ const Contact = () => {
         scrollToElement()
     }, [])
 
-    // useEffect(() => {
-    //     const element = form.current;
-    //     gsap.fromTo(element, {rotateX: 90}, {rotateX: 0, duration: 2, animationIterationCount: Infinity, scrollTrigger: {
-    //      trigger: element
-    //     }} )
-    // }, [])
 
     const senEmail = (e) => {
         e.preventDefault();
@@ -72,7 +63,7 @@ const Contact = () => {
                     <div className={styles.card}>
                         <div className={styles['contact-card']}>
                             <h5 className={styles['card-title']}>Eviar mensaje</h5>
-                            <form onSubmit={senEmail}>
+                            <form ref={form} onSubmit={senEmail}>
                                 <label htmlFor="user_name">Nombre</label>
                                 <input type="text" required name="user_name" placeholder="Escribe tu nombre" />
                                 <label htmlFor="user_email">Email</label>
