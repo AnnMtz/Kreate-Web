@@ -18,8 +18,8 @@ const Header = () => {
           <img src={logo} className="logo" alt="logo"/>
         </Link>
         <div className="navbar-collapse">
-          <ul className={`navbar-nav ${clicked ? 'active' : ''}`} onClick={clicked}>
-            <li className="nav-item mr-4">
+          <ul className={`navbar-nav ${clicked ? 'active' : ''}`}>
+            <li className="nav-item mr-4" >
               <Link to="/" className="nav-link ">Inicio</Link>
             </li>
             <li className="nav-item mr-4">

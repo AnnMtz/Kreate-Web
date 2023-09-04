@@ -16,7 +16,6 @@ function App() {
     <Router>
       <div id="container">
         <Header />
-        {/* <ScrollBtn /> */}
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/us' element={<Us />} />
