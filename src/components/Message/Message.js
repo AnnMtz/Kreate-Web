@@ -6,7 +6,7 @@ const Message = ({msg}) => {
     const [ actualMsg, setActualMsg ] = useState(0);
     const quantity = msg?.length;
 
-    const timer = setTimeout(() => {
+    setTimeout(() => {
         setActualMsg(actualMsg === 0 ? quantity - 1 : actualMsg - 1)
         clearTimeout()
     }, 4999)

@@ -19,7 +19,7 @@ const Contact = () => {
 
     useEffect(() => {
         scrollToElement()
-    }, [])
+    })
 
 
     const senEmail = (e) => {
