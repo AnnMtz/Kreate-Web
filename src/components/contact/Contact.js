@@ -7,9 +7,10 @@ import { IoIosMail } from 'react-icons/io';
 
 const Contact = () => {
     const form = useRef();
+    const div = document.getElementsByClassName('.container-fluid');
 
     const scrollToElement = () => {
-        form.current?.scrollIntoView({
+        div.current?.scrollIntoView({
             top: 100,
             left: 100,
             behavior: 'smooth'
@@ -40,7 +41,7 @@ const Contact = () => {
 
     return (
         <div className={styles['container-fluid']}>
-            <div className={styles['about-img']} ref={form}>
+            <div className={styles['about-img']}>
                 <img src={contact} id={styles.contact} alt="contact" />
             </div>
             <div className={styles.row}>

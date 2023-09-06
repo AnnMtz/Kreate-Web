@@ -189,16 +189,19 @@
 
     .social-media {
         width: 18vw;
+        margin-left: 0.5rem;
     }
 
     #face {
         height: 1.2rem;
         width: 2.2rem;
+        margin-top: 0.2rem;
     }
 
     .redes {
         height: .8rem;
         width: .7rem;
+        margin-right: 0.6rem;
     }
 
 }
@@ -292,6 +295,7 @@
 
     .redes {
         height: 1rem;
+        margin-right: 0.2rem;
     }
 }
 
@@ -338,7 +342,7 @@
 
     #face {
         height: 3.2rem;
-        width: 50rem;
+        width: 2rem;
         margin-right: -4px;
     }
 

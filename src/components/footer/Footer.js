@@ -30,9 +30,15 @@ const Footer = () => {
                         <Link to="/contact" id={styles['btn-link']}>Contacto</Link>
                     </button>
                     <div className={styles['social-media']}>
-                        <img src={face} alt="facebook" id={styles.face} />
-                        <img src={twitter} alt="facebook" className={styles.redes} />
-                        <img src={instagram} alt="facebook" className={styles.redes} />
+                        <Link to="https://www.facebook.com/profile.php?id=61550935143014" target="_blank" href="facebook">
+                             <img src={face} alt="facebook" id={styles.face} />
+                        </Link>
+                        <Link to="https://twitter.com/KreateW3b" target="_blank" href="twitter">
+                            <img src={twitter} alt="twitter" className={styles.redes} />
+                        </Link>
+                        <Link to="https://www.instagram.com/_kreateweb_/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank" href="instagram">
+                           <img src={instagram} alt="instagram" className={styles.redes} />
+                        </Link>
                     </div>
                 </div>
             </div>
