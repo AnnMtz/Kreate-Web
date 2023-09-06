@@ -1,4 +1,4 @@
-const { useState } = require("react");
+import { useState } from 'react'
 // import styled from 'styled-components';
 
 
@@ -13,11 +13,11 @@ const Message = ({msg}) => {
 
     return(
         <div className="">
-            {msg.map((message, idx) => {
+            {msg.map((message, id) => {
                 return (
-                    <div onChange={timer}>
-                        {actualMsg === idx && (
-                            <h1 key={idx}>{message}</h1>
+                    <div key={id}>
+                        {actualMsg === id && (
+                            <h1>{message}</h1>
                         )}
                     </div>
                 )

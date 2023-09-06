@@ -17,9 +17,9 @@ const Carrusel = ({images}) => {
             <div className={styles.container}>
                 {images.map((image, idx) => {
                     return (
-                    <div onChange={timer}>
+                    <div  key={idx}>
                         {actualImg === idx && (
-                        <img src={image} key={idx} alt="slides" className={styles.slides}/>
+                        <img src={image} alt="slides" className={styles.slides}/>
                     )}
                     </div>
                     )

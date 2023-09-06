@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from './main.module.css';
 import Carrusel from "components/carrusel.js/Carrusel";
 import desarrollo from 'assets/img/Desarrollo.jpg';
