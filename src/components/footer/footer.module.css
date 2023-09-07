@@ -1,3 +1,7 @@
+footer {
+    position: relative;
+    bottom: 0;
+}
 .footer {
     display: flex;
     flex-direction: row;
@@ -134,7 +138,8 @@
 
     .logo-container {
         width: 2rem;
-        margin-right: 4rem;
+        margin-right: 2.8rem;
+        margin-left: 1.5rem;
     }
 
     .logo {
@@ -149,8 +154,8 @@
 
     .card-col {
         margin-left: 0;
-        margin-right: 0rem;
-        width: 52rem;
+        margin-right: 0.3rem;
+        width: 9.4rem;
         margin-bottom: 0.5rem;
     }
 
@@ -212,8 +217,12 @@
     }
 
     .logo-container {
-        margin-right: 2rem;
+        margin-right: 1.3rem;
         margin-left: 1rem;
+    }
+
+    .card-col {
+        width: 7.4rem;
     }
 
     #contact-info {
@@ -300,9 +309,14 @@
 }
 
 @media screen and (min-width: 1024px) {
+    footer {
+        position: relative;
+        bottom: 0;
+    }
     .footer {
         padding: .5rem;
     }
+    
     .logo {
         width: 8.8rem;
         height: 6rem;
