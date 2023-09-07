@@ -129,12 +129,12 @@
     }
 
     .card-title {
-        font-size: 1rem;
+        font-size: .9rem;
         margin: 1rem;
     }
 
     .card-text {
-        margin-left: 1rem;
+        margin-left: 1.1rem;
     }
 
     .card-text span {
@@ -147,8 +147,8 @@
     }
 
     .contact-card form {
-        width: 19rem;
-        margin-left: .5rem;
+        width: 18rem;
+        margin-left: .9rem;
     }
 
     #submit {
