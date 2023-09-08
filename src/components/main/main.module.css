@@ -134,6 +134,10 @@
         font-size: 1.2rem;
     }
 
+    .message-container {
+        font-size: 8px;
+    }
+
     .main-columns {
         width: 10rem;
     }
@@ -232,7 +236,7 @@
     }
 
     #header {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .message-container {

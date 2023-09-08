@@ -13,6 +13,7 @@
     width: 24rem;
     margin: 1rem;
     border-radius: 50px;
+    object-fit: fill;
 }
 
 #left-btn, #right-btn {
@@ -30,49 +31,86 @@
     right: 2rem;
 }
 
+@media only screen and (max-width: 300px) and (min-width: 280px) {
+    .container {
+        height: 12rem;
+    }
+
+    .container .slides {
+        margin: 0;
+        width: 12rem;
+        object-fit: fill;
+        opacity: .4;
+    }
+}
 @media screen and (max-width: 420px) {
     .slides {
         height: 9rem;
-        width: 16rem;
+        width: 17rem;
+        object-fit: fill;
         border-radius: 12px;
+        opacity: .4;
     }
 }
 
 @media (min-width: 540px) {
     .slides {
         height: 12rem;
-        width: 14rem;
-    }
+        width: 22rem;
+        border-radius: 12px;
+        object-fit: fill;
+        opacity: .4;
+        }
 }
 
 @media (min-width: 768px) {
     .slides {
         height: 20rem;
-        width: 20rem;
+        width: 32rem;
+        object-fit: fill;
     }
 }
 
 @media (min-width: 1024px) {
+    .container {
+        height: 26rem;
+    }
+
     .slides {
-        /* height: 27rem;
-        width: 30rem; */
-        object-fit: cover;
-        height: 28rem;
-        width: 60vw;
-        margin: 1rem;
+        object-fit: fill;
+        width: 65vw;
+        margin: 0;
         border-radius: 12px;
-        opacity: .9;
+        opacity: .4;
     }
 }
 
 @media screen and (min-width: 1280px) {
+    .container {
+        height: 31rem;
+    }
+
+    .slides {
+        width: 56rem;
+        height: 47vh;
+        object-fit: fill;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .container {
+        align-items: center;
+        justify-content: center;
+    }
+
     .slides {
         object-fit: cover;
-        height: 28rem;
-        width: 80vw;
+        height: 38rem;
+        width: 73rem;
+        object-fit: fill;
         margin: 1rem;
         border-radius: 12px;
-        opacity: .9;
+        opacity: .4;
     }
 }
 
@@ -83,5 +121,7 @@
 
     .slides {
         height: 38rem;
+        width: 63vw;
+        object-fit: fill;
     }
 }
