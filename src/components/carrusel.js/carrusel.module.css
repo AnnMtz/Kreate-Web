@@ -75,3 +75,13 @@
         opacity: .9;
     }
 }
+
+@media screen and (min-width: 1920px) {
+    .container {
+        height: 46rem;
+    }
+
+    .slides {
+        height: 38rem;
+    }
+}

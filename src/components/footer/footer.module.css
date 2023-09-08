@@ -429,3 +429,58 @@ footer {
         margin-top: .5rem;
     }
 }
+
+@media screen and (min-width: 1920px) {
+    .logo {
+        width: 12rem;
+        height: 9rem;
+    }
+
+    .logo-container .paragraph {
+        font-size: 18px;
+    }
+
+    .card-col {
+        width: 24rem;
+    }
+
+    #contact-info {
+        font-size: 22px;
+    }
+
+    .card-col .contact-data {
+        font-size: 20px;
+    }
+
+    .card-col span {
+        font-size: 20px;
+    }
+
+    .card-rows {
+        align-items: center;
+    }
+
+    #btn {
+        height: 3rem;
+        width: 12rem;
+        padding: 11px 20px 8px 20px;
+    }
+
+    #btn-link {
+        font-size: 18px;
+    }
+
+    .social-media {
+        width: 12vw;
+    }
+
+    #face {
+        width: 3rem;
+    }
+
+    .redes {
+        width: 3rem;
+    }
+
+
+}

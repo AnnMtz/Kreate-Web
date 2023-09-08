@@ -3,7 +3,6 @@
     z-index: 1000;
     right: 25px;
     bottom: 43px;
-    /* background-color: rgb(25, 121, 169); */
     opacity: .5;
     width: 28px;
     height: 26px;
@@ -27,4 +26,11 @@
 .show {
     opacity: 1;
     visibility: visible;
+}
+
+/* @media screen and (min-width: 1920px) */
+@media screen and (min-width: 1920px) {
+    #upBtn {
+        right: 37px;
+    }
 }

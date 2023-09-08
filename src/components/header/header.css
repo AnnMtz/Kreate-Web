@@ -125,7 +125,6 @@
 
 @media screen and (min-width: 1280px) {
     .navbar {
-        /* height: 88px; */
         padding-bottom: 2rem;
     }
 
@@ -146,5 +145,23 @@
 
     .nav-link {
         font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .navbar {
+        padding-bottom: 5rem;
+    }
+
+    .logo {
+        height: 13rem;
+        margin-left: 7rem;
+    }
+
+    .navbar-nav {
+        margin-top: 3rem;
+    }
+    .nav-link {
+        font-size: 36px;
     }
 }

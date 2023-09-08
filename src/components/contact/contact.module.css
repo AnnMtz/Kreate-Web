@@ -257,7 +257,6 @@
 
 @media screen and (min-width: 1280px) {
     .container-fluid {
-        /* flex-direction: column; */
         align-items: center;
     }
 
@@ -294,7 +293,56 @@
 
     .contact-card form {
         width: 37rem;
-        /* margin-left: 6rem; */
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .about-img {
+        height: 36rem;
+    }
+
+    #contact {
+        width: 39rem;
+        height: 36rem;
+    }
+
+    .row {
+        /* align-items: center; */
+        margin: auto;
+    }
+
+    .card-title {
+        font-size: 32px;
+    }
+
+    .card-text {
+        font-size: 30px;
+    }
+
+    .card-text span {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .contact-card form {
+        width: 52rem;
+    }
+
+    .contact-card label {
+        font-size: 24px;
+    }
+
+    .contact-card input {
+        padding: 1.5rem;
+        font-size: 16px;
+    }
+
+    #submit {
+        width: 15rem;
+        height: 3rem;
+        padding: 1rem;
+        font-size: 22px;
+        margin-bottom: 3rem;
     }
 }
 

@@ -29,8 +29,7 @@ const ScrollBtn = () => {
     return (
         <>
             <div id={styles.upBtn} className={`${visible ? `${styles.show}` : `${styles.hide}`}`} onClick={scroll}>
-                {/* <IoIosMail /> */}
-                <IoIosArrowDropup  style={{width:'2rem', height:'2rem', backgroundColor: '#070ca0', borderRadius: '50px'}}/>
+                <IoIosArrowDropup  style={{width:'2.2rem', height:'2.2rem', backgroundColor: '#070ca0', borderRadius: '50px'}}/>
             </div>
         </>
     );

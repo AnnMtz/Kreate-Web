@@ -243,3 +243,44 @@ blockquote {
         width: 30rem;
     }
 }
+
+@media screen and (min-width: 1920px) {
+    .about {
+        height: 36rem;
+    }
+
+    #diseño {
+        width: 39rem;
+        height: 36rem;
+        padding: 0rem;
+    }
+
+    #title {
+        font-size: 46px;
+    }
+
+    #subtitle {
+        font-size: 24px;
+    }
+
+    .additional-columns {
+        width: 43rem;
+        padding: 3rem 4rem 2rem 4rem;
+    }
+
+    .card-title {
+        font-size: 3rem;
+    }
+
+    #marketing-title {
+        font-size: 2.6rem;
+    }
+
+    .card-text {
+        font-size: 2rem;
+    }
+
+    .card-add li {
+        font-size: 24px;
+    }
+}

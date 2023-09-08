@@ -374,6 +374,23 @@
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .about-img {
+        height: 23rem;
+    }
+
+    #company {
+        height: 24rem;
+        width: 26rem;
+    }
+
+    #subtitle {
+        font-size: 38px;
+        right: 221px;
+        top: -340px;
+    }
+}
+
 @media screen and (min-width: 1280px) {
     #company {
         width: 24rem;
@@ -422,5 +439,34 @@
 
     .card-text ul {
         margin-left: -1.6rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .about-img {
+        height: 36rem;
+    }
+
+    #company {     
+        width: 39rem;
+        height: 36rem;
+    }
+
+    #subtitle {
+        font-size: 55px;
+        right: 392px;
+        top: -488px;
+    }
+
+    #title {
+        font-size: 46px;
+    }
+
+    .card-title {
+        font-size: 3rem;
+    }
+
+    .card-text {
+        font-size: 22px;
     }
 }
