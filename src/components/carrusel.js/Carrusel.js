@@ -10,7 +10,7 @@ const Carrusel = ({images}) => {
         console.log('change');
         setActualImg(actualImg === 0 ? quantity - 1 : actualImg -1)
         clearTimeout()
-    }, 500000)
+    }, 5000)
 
     return (
         <>
