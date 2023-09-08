@@ -1,6 +1,6 @@
 import React, { useEffect, useRef} from "react";
 import styles from './additional.module.css';
-import diseño from 'assets/img/diseñoweb.jpg';
+import diseño from 'assets/img/responsive1.svg';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger)

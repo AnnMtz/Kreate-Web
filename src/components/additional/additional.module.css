@@ -7,7 +7,6 @@
     display: inherit;
     flex-direction: column;
     align-items: center;
-    /* margin: 2rem 0 3rem 0; */
     background-color: #1f1e1e;
 }
 
@@ -16,7 +15,6 @@
 }
 
 #diseño {
-    /* height: 22rem; */
     width: 22rem;
     height: 20rem;
     padding: 4rem;
@@ -42,8 +40,8 @@ blockquote {
     padding: 4rem;
     -webkit-animation-name: move;
     animation-name: move;
-    -webkit-animation-duration: 10s;
-    animation-duration: 10s;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
 }
 
 @keyframes move {
@@ -55,8 +53,8 @@ blockquote {
 #title, #subtitle {
     -webkit-animation-name: appear;
     animation-name: appear;
-    -webkit-animation-duration: 5s;
-    animation-duration: 5s;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
 }
 
 @keyframes appear {
@@ -103,7 +101,7 @@ blockquote {
 
     #diseño {
         height: 11rem;
-        width: 11rem;
+        width: 17rem;
         padding: 1.5rem;
         border-radius: 50px;
     }
@@ -113,7 +111,9 @@ blockquote {
     }
 
     blockquote {
-        font-size: 8px;
+        padding: 0.5rem 2rem;
+        font-size: 14px;
+        font-weight: 600;
         text-align: center;
     }
 

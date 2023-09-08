@@ -14,10 +14,8 @@
 }
 
 #contact {
-    border: 1px solid black;
     height: 20rem;
     width: 22rem;
-    border-radius: 66px;
 }
 .row{
     width: 60px;
@@ -26,8 +24,8 @@
     justify-content: space-evenly;
     -webkit-animation-name: rotate;
     animation-name: rotate;
-    -webkit-animation-duration: 5s;
-    animation-duration: 5s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
 }
 
 @keyframes rotate {
@@ -114,7 +112,7 @@
     }
 
     .about-img {
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
 
     #contact {
@@ -139,7 +137,8 @@
 
     .card-text span {
         margin-left: 1rem;
-        font-size: 8px;
+        font-size: 14px;
+        font-weight: 100;
     }
 
     .contact-icon {
@@ -170,11 +169,25 @@
 
     .contact-card {
         text-align: justify;
-        width: 13rem;
+        width: 100vw;
     }
 
     .card-title {
-        font-size: .7rem;
+        font-size: 12px;
+        margin: 2.6rem;
+    }
+
+    .card-text {
+        margin: 2rem;
+    }
+
+    .card-text span {
+        font-size: 12px;
+    }
+
+    .contact-card form {
+        width: 14rem;
+        margin-left: 2rem;
     }
 
     .contact-card form {
@@ -269,6 +282,14 @@
 
     .card-text {
         margin-left: 6rem;
+    }
+
+    .about-img {
+        padding: 3rem 0 2rem 0.5rem;
+    }
+
+    #contact {
+        border: none;
     }
 
     .contact-card form {

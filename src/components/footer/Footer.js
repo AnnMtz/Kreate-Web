@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from 'assets/img/logo.png';
-import face from 'assets/img/face.png';
-import twitter from 'assets/img/twitter.png';
-import instagram from 'assets/img/instagram.png';
+import face from 'assets/img/icon-facebook.svg';
+import instagram from 'assets/img/icon-instagram.svg';
+import twitter from 'assets/img/icon-twitter.svg';
 import styles from './footer.module.css';
 
 const Footer = () => {

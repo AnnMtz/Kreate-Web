@@ -1,7 +1,7 @@
 import React, { useRef,useEffect } from "react";
 import styles from './contact.module.css';
 import emailjs from 'emailjs-com';
-import contact from 'assets/img/contacto.jpg';
+import contact from 'assets/img/contacto.svg';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { IoIosMail } from 'react-icons/io';
 
@@ -63,7 +63,7 @@ const Contact = () => {
                 <div className={styles.columns}>
                     <div className={styles.card}>
                         <div className={styles['contact-card']}>
-                            <h5 className={styles['card-title']}>Eviar mensaje</h5>
+                            <h5 className={styles['card-title']}>Enviar mensaje</h5>
                             <form ref={form} onSubmit={senEmail}>
                                 <label htmlFor="user_name">Nombre</label>
                                 <input type="text" required name="user_name" placeholder="Escribe tu nombre" />

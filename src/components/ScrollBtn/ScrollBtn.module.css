@@ -2,8 +2,8 @@
     position: fixed;
     z-index: 1000;
     right: 25px;
-    bottom: 135px;
-    background-color: rgb(25, 121, 169);
+    bottom: 43px;
+    /* background-color: rgb(25, 121, 169); */
     opacity: .5;
     width: 28px;
     height: 26px;

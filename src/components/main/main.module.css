@@ -6,12 +6,12 @@
 
 .message-container {
     position: relative;
-    top: -300px;
+    top: -150px;
     color: orange;
     font-size: 26px;
     text-transform: uppercase;
     height: 37px;
-    -webkit-animation-name: up;
+    -webkit-animation-name: up ease-in;
     animation-name: up;
     -webkit-animation-duration: 5s;
     animation-duration: 5s;
@@ -32,8 +32,8 @@
     width: 100vw;
     -webkit-animation-name: rotate;
     animation-name: rotate;
-    -webkit-animation-duration: 9s;
-    animation-duration: 9s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
 }
 
 @keyframes rotate {
@@ -45,8 +45,8 @@
 #header {
     -webkit-animation-name: appear;
     animation-name: appear;
-    -webkit-animation-duration: 7s;
-    animation-duration: 7s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
 }
 
 @keyframes appear {
@@ -100,8 +100,8 @@
     }
 
     .message-container {
-        font-size: 8px;
-        top: -145px;
+        font-size: 12px;
+        top: -160px;
         text-align: center;
         font-weight: bolder;
     }
@@ -138,6 +138,9 @@
         width: 10rem;
     }
 
+    #dev-img, .card-img {
+        height: 6rem;
+    }
     .card-title {
         font-size: 16px;
     }
@@ -224,6 +227,12 @@
         font-size: 2rem;
     }
 
+    .message-container {
+        top: -375px;
+        opacity: 1;
+        font-size: 30px;
+    }
+
     .card-title {
         font-size: 1.2rem;
     }
@@ -242,5 +251,6 @@
     #dev-img, 
     .card-img {
         height: 10rem;
+        object-fit: contain;
     }
 }

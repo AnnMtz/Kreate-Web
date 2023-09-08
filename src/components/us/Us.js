@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react";
 import styles from "./us.module.css";
-import company from 'assets/img/empresa.jpg';
-import values from 'assets/img/valores.jpg';
-import mision from 'assets/img/mision.jpg';
-import vision from 'assets/img/mision_vision_valores.jpg';
+import company from 'assets/img/company.svg';
+import values from 'assets/img/valores1.png';
+import mision from 'assets/img/mision.svg';
+import vision from 'assets/img/vison.png';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger)
@@ -14,7 +14,7 @@ const Us = () => {
 
     useEffect(() =>{
         const element = ref.current;
-        gsap.fromTo(element, {rotateX: 90}, {rotateX: 0, duration: 5, scrollTrigger: {
+        gsap.fromTo(element, {rotateX: 90}, {rotateX: 0, duration: 2, scrollTrigger: {
             trigger: element
         }})
     }, [])
@@ -31,7 +31,7 @@ const Us = () => {
                 <div className={styles.columns}>
                     <div className={styles.card}>
                         <img src={values}  id={styles['values-img']} alt="values-img" />
-                        <div className={styles['card-body']}>
+                        <div id={styles.missionCard} >
                             <h5 className={styles['card-title']}>Valores</h5>
                             <p className={styles['card-text']}>
                                 <ul className={styles['values-imb']}>

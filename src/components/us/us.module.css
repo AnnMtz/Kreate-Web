@@ -4,25 +4,27 @@
     overflow: hidden;
 }
 
+.about-img {
+    height: 20rem;
+    margin: 0;
+}
+
 .img-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100vw;
-    margin: 3rem 0 .8rem 0;
 }
 
 #company{
-    border: 1px solid black;
     width: 22rem;
     height: 24rem;
-    border-radius: 66px;
+    object-fit: contain;
 }
 
 #title {
-    animation: appear 6s ease-in;
+    animation: appear 1s ease-in;
     margin: 2rem auto;
-    text-shadow: 0px 0px 6px #000;
+    text-shadow: 0px 0px 3px #000;
 }
 
 @keyframes appear {
@@ -36,18 +38,20 @@
 }
 
 #subtitle {
-    animation: color 4s ease-in-out;
+    animation: color 1s ease-in-out;
     position: relative;
-    top: -315px;
-    font-size: 26px;
-    color: #ffff00e8;
+    top: -259px;
+    right: 164px;
+    font-size: 21px;
+    font-family: 'Redressed', cursive;
+    color: orange;
     text-decoration: underline;
     margin: 0;
 }
 
 @keyframes color {
     from{
-        transform: translateY(300px);
+        transform:scaleX(2)
     }
 }
 
@@ -92,8 +96,8 @@
 }
 
 #values-img {
-    width: 16rem;
-    height: 14rem;
+    width: 9rem;
+    height: 9rem;
 }
 
 .card-img{
@@ -106,6 +110,10 @@
     margin: auto 6rem;
     width: 24rem;
     text-align: justify;
+}
+
+#missionCard {
+    margin-top: 3rem;
 }
 
 .card-title{
@@ -122,18 +130,27 @@
 
 
 @media (max-width: 420px) {
+    .about-img {
+        height: 14rem;
+    }
     #company {
-        width: 67vw;
+        width: 58vw;
         height: 34vh;
     }
 
     #subtitle {
         position: relative;
-        top: -194px;
-        font-size: 28px;
+        top: -184px;
+        font-size: 14px;
+        right: 86px;
         opacity: .9;
         line-height: 12px;
     }
+
+    #title {
+        font-size: 20px;
+    }
+
     .about-img h1 {
         font-size: 1rem;
     }
@@ -170,14 +187,36 @@
     }
 }
 
-@media only screen and (max-width: 300px) and (min-width: 280px) {
-    #company{
-        height: 31vh;
+@media only screen and (max-width: 420px) and (min-width: 393px) {
+    .about-img {
+        height: 26vh;
+    }
+
+    #company {
+        width: 54vw;
+        height: 28vh;
     }
 
     #subtitle {
-        font-size: 20px;
-        top: -162px;
+        top: -193px;
+        font-size: 18px;
+        right: 96px;
+    }
+}
+@media only screen and (max-width: 300px) and (min-width: 280px) {
+    .about-img {
+        height: 11rem;
+    }
+
+    #company{
+        height: 30vh;
+        width: 56vw;
+    }
+
+    #subtitle {
+        font-size: 13px;
+        top: -154px;
+        right: 67px;
     }
 
     #title {
@@ -186,6 +225,11 @@
 
     #values{
         width: 10rem;
+    }
+
+    #values-img {
+        width: 10rem;
+        height: 10rem;
     }
 
     .card-img {
@@ -206,12 +250,21 @@
 }
 
 @media (min-width: 540px) {
+    .about-img {
+        height: 14rem;
+    }
     #company {
-        height: 22rem;
+        height: 12rem;
+        width: 16rem;
     }
     #subtitle {
+        font-size: 20px;
+        top: -190px;
+        right: 145px;
+    }
+
+    #title {
         font-size: 30px;
-        top: -268px;
     }
 
     .rows {
@@ -231,8 +284,10 @@
     }
 
     #subtitle {
-        top: -239px;
-        font-size: 37px;
+        top: -289px;
+        font-size: 26px;
+        font-weight: 100;
+        right: 225px;
     }
 
     .about-img h1 {
@@ -251,7 +306,7 @@
     }
     #values-img {
         width: 9rem;
-        height: 11rem;
+        height: 9rem;
     }
 
     .card-img {
@@ -274,18 +329,32 @@
     }
 
     .card-text ul {
-        margin-left: 1.5rem;
+        margin-left: 1rem;
     }
 }
 
-@media (min-width: 912px) {
+@media only screen and (max-width: 912px) and (min-width: 768px){
     .rows {
         margin: 0 3rem 4rem 2rem;
     }
+    
+    .about-img {
+        height: 21rem;
+    }
+
+    #company {
+        width: 22rem;
+        height: 22rem;
+    }
+
+    #subtitle {
+        font-size: 30px;
+        right: 214px;
+    }
 
     #values-img{
-        width: 12rem;
-        height: 14rem;
+        width: 9rem;
+        height: 9rem;
     }
 
     .card-img {
@@ -324,13 +393,23 @@
     }
 
     #values-img {
-        width: 16rem;
-        height: 16rem;
+        width: 9rem;
+        height: 9rem;
+        margin-top: 1.9rem;
+        object-fit: contain;
     }
 
     .card-img {
         width: 14rem;
         height: 14rem;
+        margin: 0;
+        object-fit: contain;
+    }
+    
+    #vision-img {
+        width: 14rem;
+        height: 14rem;
+        margin: 0;
     }
 
     .card-body {
@@ -342,6 +421,6 @@
     }
 
     .card-text ul {
-        margin-left: 3.5rem;
+        margin-left: -1.6rem;
     }
 }
