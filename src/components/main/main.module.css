@@ -6,17 +6,18 @@
 
 .message-container {
     position: relative;
-    top: -150px;
+    top: -300px;
     color: orange;
     font-size: 26px;
     text-transform: uppercase;
     height: 37px;
-    -webkit-animation-name: up ease-in;
+    -webkit-animation-name: up;
     animation-name: up;
     -webkit-animation-duration: 5s;
     animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
+    width: 100vw;
+    -webkit-animation-name: rotate;
+    animation-name: rotate;
 }
 
 @keyframes up {
@@ -137,9 +138,14 @@
         width: 10rem;
     }
 
-    #dev-img, .card-img {
+    #dev-img {
         height: 6rem;
     }
+
+    .card-img {
+        height: 6rem;
+    }
+
     .card-title {
         font-size: 16px;
     }
@@ -209,7 +215,10 @@
         font-size: 12px;
     }
 
-    #dev-img, 
+    #dev-img {
+        height: 8rem;
+    }
+
     .card-img {
         height: 8rem;
     }
@@ -235,6 +244,7 @@
     .card-title {
         font-size: 1.2rem;
     }
+
     .main-columns {
         width: 24rem;
     }
@@ -247,7 +257,11 @@
         font-size: 18px;
     }
 
-    #dev-img, 
+    #dev-img {
+        height: 10rem;
+        object-fit: contain;
+    } 
+
     .card-img {
         height: 10rem;
         object-fit: contain;
