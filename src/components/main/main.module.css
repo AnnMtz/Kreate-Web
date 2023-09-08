@@ -242,7 +242,7 @@
     .message-container {
         top: -375px;
         opacity: 1;
-        font-size: 30px;
+        font-size: 26px;
     }
 
     .card-title {
@@ -274,7 +274,7 @@
 
 @media screen and (min-width: 1920px) {
     .message-container {
-        font-size: 2.5rem;
+        font-size: 30px;
         top: -494px;
     }
 
