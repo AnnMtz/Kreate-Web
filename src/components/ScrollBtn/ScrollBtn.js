@@ -1,8 +1,6 @@
 /* eslint-disable no-restricted-globals */
 import { useState, useEffect } from 'react';
 import styles from './ScrollBtn.module.css';
-import { BiSolidUpArrow } from 'react-icons/bi'
-import { IoIosMail } from 'react-icons/io';
 import { IoIosArrowDropup } from 'react-icons/io'
 
 const ScrollBtn = () => {
